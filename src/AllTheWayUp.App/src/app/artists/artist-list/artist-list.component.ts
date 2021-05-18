@@ -20,7 +20,7 @@ import { EntityDataSource } from '@shared/entity-data-source';
 export class ArtistListComponent implements OnDestroy {
 
   private readonly _destroyed$: Subject<void> = new Subject();
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
 
   private readonly index$: BehaviorSubject<number> = new BehaviorSubject(0);
   private readonly pageSize$: BehaviorSubject<number> = new BehaviorSubject(5);

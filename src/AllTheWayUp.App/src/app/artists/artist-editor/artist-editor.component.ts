@@ -33,12 +33,12 @@ export class ArtistEditorComponent implements ControlValueAccessor,  Validator  
     private readonly _elementRef: ElementRef
   ) { }
 
-  validate(control: AbstractControl): ValidationErrors {
+  validate(control: AbstractControl): ValidationErrors | null {
     return this.form.valid
       ? null
       : Object.keys(this.form.controls).reduce(
           (accumulatedErrors, formControlName) => {
-            const errors = { ...accumulatedErrors };
+            const errors = { ...accumulatedErrors } as any;
 
             const controlErrors = this.form.controls[formControlName].errors;
 
@@ -49,7 +49,7 @@ export class ArtistEditorComponent implements ControlValueAccessor,  Validator  
             return errors;
           },
           {}
-        );
+        ) as ValidationErrors;
   }
   
   writeValue(artist: Artist): void {   

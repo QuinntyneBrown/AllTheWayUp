@@ -1,0 +1,19 @@
+:host {
+    h1 {
+        padding:30px;
+    }    
+
+    ul,li {
+        padding:0;
+        margin: 0;
+        list-style: none;
+
+        a {
+            padding:30px;
+            display: block;
+            box-sizing: border-box;
+        }
+    }
+
+    
+}

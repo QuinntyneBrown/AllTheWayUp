@@ -41,10 +41,18 @@ namespace AllTheWayUp.Api.Data
                 AddIfDoesntExist(new(drake.ArtistId, "Successful"));
                 AddIfDoesntExist(new(drake.ArtistId, "Over"));
                 AddIfDoesntExist(new(drake.ArtistId, "Worst Behaviour"));
+                AddIfDoesntExist(new(drake.ArtistId, "Laugh Now Cry Later"));
+                AddIfDoesntExist(new(drake.ArtistId, "Behind Barz"));
+                AddIfDoesntExist(new(drake.ArtistId, "Only You Freestyle"));
+                AddIfDoesntExist(new(drake.ArtistId, "4PM in Calabasas"));
+                AddIfDoesntExist(new(drake.ArtistId, "5AM In Toronto"));
 
                 AddIfDoesntExist(new(jayZ.ArtistId, "Big Pimpin"));
                 AddIfDoesntExist(new(jayZ.ArtistId, "Frontin'"));
                 AddIfDoesntExist(new(jayZ.ArtistId, "Sorry Not Sorry'"));
+                AddIfDoesntExist(new(jayZ.ArtistId, "Song Cry"));
+                AddIfDoesntExist(new(jayZ.ArtistId, "Hard Knock Life"));
+                AddIfDoesntExist(new(jayZ.ArtistId, "Girls Girls Girls"));
 
                 AddIfDoesntExist(new(lucyPearl.ArtistId, "Dance Tonight"));
                 AddIfDoesntExist(new(lucyPearl.ArtistId, "Without You"));

@@ -6,6 +6,7 @@ import { ArtistEditorComponent } from './artist-editor/artist-editor.component';
 import { SharedModule } from '@shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ArtistComponent } from './artist/artist.component';
 
 
 
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     ArtistListComponent,
     ArtistDetailComponent,
-    ArtistEditorComponent
+    ArtistEditorComponent,
+    ArtistComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,10 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       { 
         path: "", component: ArtistListComponent,
-      }
+      },
+      { 
+        path: ":id", component: ArtistComponent,
+      }      
     ])
   ]
 })

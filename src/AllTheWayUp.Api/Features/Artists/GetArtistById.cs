@@ -31,7 +31,9 @@ namespace AllTheWayUp.Api.Features
             {
                 return new()
                 {
-                    Artist = (await _context.Artists.SingleOrDefaultAsync(x => x.ArtistId == request.ArtistId)).ToDto()
+                    Artist = (await _context.Artists
+                    .Include(x => x.Tracks)
+                    .SingleOrDefaultAsync(x => x.ArtistId == request.ArtistId)).ToDto()
                 };
             }
 

@@ -1,0 +1,12 @@
+<ng-container *ngIf="vm$ | async as vm">
+
+    <h1>
+        {{ vm.name }}
+    </h1>
+
+    <ul>
+        <li *ngFor="let track of vm.tracks">
+            <a>{{ track.name }}</a>
+        </li>
+    </ul>
+</ng-container>

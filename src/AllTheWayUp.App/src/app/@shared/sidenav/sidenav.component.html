@@ -1,0 +1,7 @@
+<h1 [routerLink]="['/']">All The Way Up</h1>
+
+<ul>
+    <li *ngFor="let navItem of navItems">
+        <a [routerLink]="navItem.url">{{ navItem.label }}</a>
+    </li>
+</ul>

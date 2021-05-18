@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllTheWayUp.Api", "src\AllT
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F19A9E6-3A9A-482B-A516-B0AC3DF43A34}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		clisettings.json = clisettings.json
 	EndProjectSection
 EndProject

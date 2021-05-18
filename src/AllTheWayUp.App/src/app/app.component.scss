@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    min-height: 100%;
+
+    app-sidenav {
+        min-width: 300px;
+        box-sizing: border-box;
+    }
+
+    main {
+        min-width: calc(100% - 300px);
+        box-sizing: border-box;
+    }
+}
