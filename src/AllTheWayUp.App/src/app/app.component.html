@@ -1,4 +1,4 @@
-<ng-container *ngIf="vm$ | async as vm">
+<!-- <ng-container *ngIf="vm$ | async as vm">
     
     <app-sidenav [navItems]="vm.navItems"></app-sidenav>
 
@@ -6,4 +6,16 @@
         <router-outlet></router-outlet>
     </main>
 
-</ng-container>
+</ng-container> -->
+
+
+<mat-sidenav-container *ngIf="vm$ | async as vm">
+    <mat-sidenav mode="side" opened>
+        <app-sidenav [navItems]="vm.navItems"></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
